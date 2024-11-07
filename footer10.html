@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIT</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f5f7;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Navigation Menu */
+        nav {
+            background: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #2a5298;
+            border-radius: 5px;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #1e3c72;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-left: 5px solid #2a5298;
+            padding-left: 10px;
+        }
+
+        .key-points {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        .question h3 {
+            font-size: 1.3em;
+            cursor: pointer;
+            padding: 10px;
+            background: #f1f1f1;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .question h3:hover {
+            background: #e0e0e0;
+        }
+
+        .question h3.active {
+            color: #2a5298;
+        }
+
+        .answer {
+            display: none;
+            padding: 15px;
+            background: #f9f9f9;
+            border-left: 4px solid #2a5298;
+            border-radius: 5px;
+            margin-top: 5px;
+            color: #444;
+            font-size: 1em;
+        }
+
+        /* Footer Section */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>GIT</h1>
+        <p>Explore foundational concepts in version control, continuous integration, and containerization.</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#git">GIT</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- GIT Section -->
+    <section id="git">
+        <h2>GIT</h2>
+        <p>GIT is a distributed version control system that tracks changes in source code, enabling multiple developers
+            to collaborate on a project efficiently.</p>
+        <div class="key-points">
+            <h3>Key Concepts:</h3>
+            <ul>
+                <li>Version Control: Managing changes to source code</li>
+                <li>Branches: Parallel lines of development</li>
+                <li>Commits: Snapshots of changes</li>
+            </ul>
+        </div>
+
+        <!-- Interactive Q&A for GIT -->
+        <div class="question">
+            <h3>What is a GIT branch?</h3>
+            <div class="answer">
+                <p>A branch in GIT allows multiple developers to work on different parts of a project simultaneously
+                    without affecting the main codebase.</p>
+            </div>
+        </div>
+        <div class="question">
+            <h3>How does a GIT commit work?</h3>
+            <div class="answer">
+                <p>A GIT commit saves changes made to files in a repository, along with a unique message describing what
+                    was changed. It acts as a snapshot of the project at that moment.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer Section -->
+   
+    <!-- JavaScript for Toggle Answer Visibility -->
+    <script>
+        const questions = document.querySelectorAll(".question h3");
+        questions.forEach((question) => {
+            question.addEventListener("click", () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === "block" ? "none" : "block";
+                question.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+
+</html>

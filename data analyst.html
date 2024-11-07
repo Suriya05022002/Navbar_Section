@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Navigation</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Hamburger menu icon -->
+<div class="hamburger" onclick="toggleNav()">&#9776;</div>
+
+<!-- Sidebar navigation -->
+<div id="sideNav" class="side-nav">
+    <a href="javascript:void(0)" class="close-btn" onclick="toggleNav()">&times;</a>
+  
+  <div class="scrollable-section">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="frontend.html">Frontend Tutorial</a></li>
+        <li><a href="datascience.html">Python for Data Science</a></li>
+        <li><a href="java.html">Java Programming Basics</a></li>
+        <li><a href="data analyst.html">Data Analyst</a></li>
+        <li><a href="fullstack.html">Full Stack Development</a></li>
+        <li><a href="ux.html">Getting Started with UI/UX</a></li>
+
+        <li><a href="#">Introduction to Deep Learning</a></li>
+        <li><a href="#">Neural Networks</a></li>
+        <li><a href="#">Convolutional Neural Networks</a></li>
+        <li><a href="#">Recurrent Neural Networks</a></li>
+        
+        <li><a href="#">Data Science Overview</a></li>
+        <li><a href="#">Data Analysis</a></li>
+        <li><a href="#">Data Visualization</a></li>
+        <li><a href="#">Big Data Technologies</a></li>
+          
+            
+        <li><a href="#">Introduction to Deep Learning</a></li>
+        <li><a href="#">Neural Networks</a></li>
+        <li><a href="#">Convolutional Networks</a></li>
+        <li><a href="#">Recurrent Networks</a></li>
+          
+    
+          
+        <li><a href="#">Introduction to Deep Learning</a></li>
+        <li><a href="#">Neural Networks</a></li>
+        <li><a href="#">Convolutional Networks</a></li>
+        <li><a href="#">Recurrent Networks</a></li>
+            
+    
+    </ul>
+  </div>
+</div>
+
+<!-- Main Navbar -->
+
+<nav class="navbar">
+    <div class="nav-links">
+        <div class="nav-link" id="courses-link" aria-haspopup="true" aria-expanded="false" onclick="toggleDropdown('courses-dropdown')">
+            Courses <i class="fa-solid fa-chevron-down"></i>
+            <div class="dropdown" id="courses-dropdown"> 
+                <a href="frontend.html">Web Development</a>
+                <a href="#">Mobile Development</a>
+                <a href="#">Cloud Computing</a>
+                <a href="#">Cyber Security</a>
+                <a href="#">Java</a>
+            </div>
+        </div>
+
+        <div class="nav-link" id="tutorials-link" aria-haspopup="true" aria-expanded="false" onclick="toggleDropdown('tutorials-dropdown')">
+            Tutorials <i class="fa-solid fa-chevron-down"></i>
+            <div class="dropdown" id="tutorials-dropdown">
+                <a href="java.html">Java</a>
+                <a href="#">Python</a>
+                <a href="#">SQL</a>
+                <a href="#">PHP</a>
+            </div>
+        </div>
+
+        <div class="nav-link" id="jobs-link" aria-haspopup="true" aria-expanded="false" onclick="toggleDropdown('jobs-dropdown')">
+            Data Science <i class="fa-solid fa-chevron-down"></i>
+            <div class="dropdown" id="jobs-dropdown">
+                <a href="frontend.html">Frontend</a>
+                <a href="#">Backend</a>
+                <a href="#">Fullstack</a>
+                <a href="#">MERN Stack</a>
+            </div>
+        </div>
+        <div class="nav-link" id="tutorials-link" aria-haspopup="true" aria-expanded="false" onclick="toggleDropdown('tutorials-dropdown')">
+           Practice <i class="fa-solid fa-chevron-down"></i>
+            <div class="dropdown" id="tutorials-dropdown">
+                <a href="java.html">Java</a>
+                <a href="#">Python</a>
+                <a href="#">SQL</a>
+                <a href="#">PHP</a>
+            </div>
+        </div>
+</div>
+
+    <div class="navbar-icons">
+        <button><a class="nav-link" href="#">Sign In</a></button>
+        <a class="nav-link" href="#"><i class="fa-solid fa-bell"></i></a>
+        <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </div>
+</nav>
+
+<!-- Fixed Sub Navbar -->
+ 
+<div class="sub-navbar-container">
+    <nav class="sub-navbar">
+        <a class="nav-link" href="datascience.html">Data Science</a>
+        <a class="nav-link" href="data analyst.html">Data Analysis</a>
+        <a class="nav-link" href="frontend.html">Front End</a>
+        <a class="nav-link" href="fullstack.html">Full Stack Development</a>
+        <a class="nav-link" href="java.html">Java</a>
+        <a class="nav-link" href="#">NLP</a>
+        <a class="nav-link" href="#">Computer Vision</a>
+        <a class="nav-link" href="#">Artificial Intelligence</a>
+        <a class="nav-link" href="#">AI ML DS Interview Series</a>
+        <a class="nav-link" href="#">AI ML DS Projects Series</a>
+        <a class="nav-link" href="#">Data Engineering</a>
+        <a class="nav-link" href="#">Web Scraping</a>
+    </nav>
+</div>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <div class="go-premium">Go Premium</div>
+    <div class="fixed-section">
+        <div>Share Your Experiences</div>
+    </div>
+
+    <div class="scrollable-section">
+        <ul>
+            <li><a href="frontend.html">Frontend Tutorial</a></li>
+            <li><a href="datascience.html">Python for Data Science</a></li>
+            <li><a href="java.html">Java Programming Basics</a></li>
+            <li><a href="data analyst.html">Data Analyst</a></li>
+            <li><a href="index.html">Full Stack Development</a></li>
+            <li><a href="ux.html">Getting Started with UI/UX</a></li>
+        </ul>
+    </div>
+
+    <div class="section-title">Course Categories</div>
+    <ul>
+        <li><a href="#">Introduction to Deep Learning</a></li>
+        <li><a href="#">Neural Networks</a></li>
+        <li><a href="#">Convolutional Neural Networks</a></li>
+        <li><a href="#">Recurrent Neural Networks</a></li>
+    </ul>
+
+    <div class="section-title">Data Science</div>
+        <ul>
+            <li><a href="#">Data Science Overview</a></li>
+            <li><a href="#">Data Analysis</a></li>
+            <li><a href="#">Data Visualization</a></li>
+            <li><a href="#">Big Data Technologies</a></li>
+        </ul>
+        
+        <div class="section-title">Frontend</div>
+        <ul>
+            <li><a href="#">Introduction to Deep Learning</a></li>
+            <li><a href="#">Neural Networks</a></li>
+            <li><a href="#">Convolutional Networks</a></li>
+            <li><a href="#">Recurrent Networks</a></li>
+        </ul>
+
+        <div class="section-title">Backend</div>
+        <ul>
+            <li><a href="#">Introduction to Deep Learning</a></li>
+            <li><a href="#">Neural Networks</a></li>
+            <li><a href="#">Convolutional Networks</a></li>
+            <li><a href="#">Recurrent Networks</a></li>
+        </ul>
+
+        
+</div>
+
+<!-- Main Content -->
+<main class="content">
+       <!-- Introduction Section -->
+       <section class="section">
+        <h2>Introduction to Data Analysis</h2>
+        <img src="https://tse2.mm.bing.net/th?id=OIP.v_pDIf12B_Ez2Mjq37c-nAHaEc&pid=Api&P=0&h=180" alt="Data Analysis">
+        <p>Data analysis is the process of inspecting, cleaning, transforming, and modeling data with the goal of discovering useful information, informing conclusions, and supporting decision-making. Data analysts use various techniques to interpret and present data effectively.</p>
+    </section>
+
+    <!-- Key Skills Section -->
+    <section class="section">
+        <h2>Key Skills for Data Analysts</h2>
+        <img src="https://usa.bootcampcdn.com/wp-content/uploads/sites/108/2020/04/data-analyst-skills-2020.jpg" alt="Key Skills">
+        <p>Successful data analysts possess a variety of skills, including:</p>
+        <ul>
+            <li><strong>Statistical Analysis:</strong> Ability to use statistical methods to analyze data.</li>
+            <li><strong>Programming:</strong> Proficiency in programming languages such as Python, R, or SQL.</li>
+            <li><strong>Data Visualization:</strong> Skill in creating visual representations of data.</li>
+            <li><strong>Problem-Solving:</strong> Capability to solve complex problems using data.</li>
+            <li><strong>Communication:</strong> Ability to convey findings clearly to non-technical stakeholders.</li>
+        </ul>
+    </section>
+
+    <!-- Data Analysis Process Section -->
+    <section class="section">
+        <h2>Data Analysis Process</h2>
+        <img src="https://daxg39y63pxwu.cloudfront.net/images/blog/data-analysis-process/Data_Analytics_Process.png" alt="Data Analysis Process">
+        <p>The data analysis process generally involves the following steps:</p>
+        <ol>
+            <li>Define the Objective</li>
+            <li>Collect Data</li>
+            <li>Clean and Preprocess Data</li>
+            <li>Analyze Data</li>
+            <li>Interpret Results</li>
+            <li>Present Findings</li>
+        </ol>
+    </section>
+
+    <!-- Techniques Section -->
+    <section class="section">
+        <h2>Data Analysis Techniques</h2>
+        <img src="https://cdn.educba.com/academy/wp-content/uploads/2019/10/Types-of-Data-Analysis-Techniques.png" alt="Data Analysis Techniques">
+        <p>Common techniques used in data analysis include:</p>
+        <ul>
+            <li><strong>Descriptive Statistics:</strong> Summarizing data using measures like mean, median, and mode.</li>
+            <li><strong>Regression Analysis:</strong> Modeling the relationship between variables.</li>
+            <li><strong>Hypothesis Testing:</strong> Testing assumptions to make data-driven decisions.</li>
+            <li><strong>Cluster Analysis:</strong> Grouping similar data points to identify patterns.</li>
+            <li><strong>Data Mining:</strong> Discovering hidden patterns in large datasets.</li>
+        </ul>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="section">
+        <h2>Tools for Data Analysis</h2>
+        <img src="https://lh4.googleusercontent.com/L_chBeYDRgVF9xCP4bH2U21iW54yCzNNk5oNk8-OcAN8z7rUJe0q4QmMSRKNJaDoXIJyMiQ9Y3sv_2E8eEv6dUbdwrqqFzUTSRGZpgtok-V5gLSl8UoaYW0CqQIoryIhsMRO0xOSYPItOLWz" alt="Data Analysis Tools">
+        <p>Data analysts use a variety of tools to analyze data, including:</p>
+        <ul>
+            <li><strong>Python:</strong> A versatile programming language used for data analysis and visualization.</li>
+            <li><strong>R:</strong> A programming language and software environment for statistical computing.</li>
+            <li><strong>SQL:</strong> A language for managing and querying relational databases.</li>
+            <li><strong>Excel:</strong> A spreadsheet tool for data analysis and visualization.</li>
+            <li><strong>Tableau:</strong> A tool for creating interactive and shareable dashboards.</li>
+        </ul>
+    </section>
+
+    <!-- Applications Section -->
+    <section class="section">
+        <h2>Applications of Data Analysis</h2>
+        <img src="https://d3i71xaburhd42.cloudfront.net/ffc8e0b11ede3e8677bd5c015be922e0257da06f/2-Figure2-1.png" alt="Applications of Data Analysis">
+        <p>Data analysis is applied in various fields, such as:</p>
+        <ul>
+            <li>Healthcare: Improving patient care and operational efficiency.</li>
+            <li>Finance: Detecting fraud and managing financial risks.</li>
+            <li>Marketing: Analyzing customer behavior and optimizing campaigns.</li>
+            <li>Retail: Enhancing inventory management and sales forecasting.</li>
+            <li>Sports: Analyzing performance and strategy.</li>
+        </ul>
+    </section>
+</main>
+
+<hr><br><br>
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <!-- Company Info -->
+        <div class="footer-section company-info">
+            <div class="company-logo">
+                <img src="company-logo.png" alt="Company Logo">
+                <span>GR Networks</span>
+            </div>
+            <p><i class="fa-solid fa-location-dot"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nihil facilis exercitationem neque incidunt ad doloribus ullam cum voluptates! Sit?</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/gowthamrajnetwork"></a><img src="facebook.png" width="40" height="40" loading="lazy" alt="instagram">
+                <a href="https://www.instagram.com/gowthamraj_network/"></a> <img src="instagram.jpeg"  width="40" height="40" loading="lazy" alt="instagram">
+                <a href="https://www.linkedin.com/company/gowthamrajnetwork/"></a> <img src="linkedin.png" width="40" height="40" loading="lazy" alt="instagram">
+                <a href="https://www.youtube.com/@GOWTHAMRAJNETWORK"></a> <img src="u tube.png" width="40" height="40" loading="lazy" alt="instagram">
+                
+            </div>
+        </div>
+
+        <!-- Footer Links Sections -->
+        <!-- Add all your footer sections here as per your structure -->
+<!-- Footer Links Sections -->
+<div class="footer-section">
+    <h3>Python Tutorial</h3>
+    <ul>
+        <li><a href="footer.html">python Programming</a></li>
+        <li><a href="footer1.html">Examples</a></li>
+        <li><a href="footer2.html">Django Tutorial</a></li>
+        <li><a href="footer3.html">Python Projects</a></li>
+        <li><a href="footer4.html">Python Interview Questions</a></li>
+        <li><a href="footer5..html">Python Programming</a></li>
+        <li><a href="footer6.html">Examples</a></li>
+        <li><a href="footer7.html">Django Tutorial</a></li>
+    
+    </ul>
+</div>
+
+<div class="footer-section">
+    <h3>Computer Science</h3>
+    <ul>
+        <li><a href="footer8.html">Operating Systems</a></li>
+        <li><a href="footer9.html">Computer Networks</a></li>
+        <li><a href="footer10.html">Database Management</a></li>
+        <li><a href="#">Computer Networks</a></li>
+        <li><a href="#">Database Management</a></li>
+    </ul>
+</div>
+
+        <div class="footer-section">
+            <h3>DevOps</h3>
+            <ul>
+                <li><a href="#">Git</a></li>
+                <li><a href="#">AWS</a></li>
+                <li><a href="#">Docker</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>System Design</h3>
+            <ul>
+                <li><a href="#">High-Level Design</a></li>
+                <li><a href="#">Low-Level Design</a></li>
+                <li><a href="#">Design Patterns</a></li>
+                <li><a href="#">Computer Networks</a></li>
+                <li><a href="#">Database Management</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>School Subjects</h3>
+            <ul>
+                <li><a href="#">Mathematics</a></li>
+                <li><a href="#">Physics</a></li>
+                <li><a href="#">Chemistry</a></li>
+                <li><a href="#">Economics</a></li>
+                <li><a href="#">Finance</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section1">
+            <h3>Java Tutorial</h3>
+            <ul>
+                <li><a href="#">Java Programming</a></li>
+                <li><a href="#">Examples</a></li>
+                <li><a href="#">Core java Tutorial</a></li>
+                <li><a href="#">java Projects</a></li>
+                <li><a href="#">java Interview Questions</a></li>
+                <li><a href="#">java Programming</a></li>
+                <li><a href="#">Examples</a></li>
+              
+            
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Databases</h3>
+            <ul>
+                <li><a href="#">SQL</a></li>
+                <li><a href="#">MySQL</a></li>
+                <li><a href="#">MongoDB</a></li><li><a href="#">Economics</a></li>
+                <li><a href="#">Finance</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Competitive Exams</h3>
+            <ul>
+                <li><a href="#">JEE Advanced</a></li>
+                <li><a href="#">UPSC</a></li>
+                <li><a href="#">SSC CGL</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>More Tutorials</h3>
+            <ul>
+                <li><a href="#">Software Development</a></li>
+                <li><a href="#">Product Management</a></li>
+                <li><a href="#">Project Management</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Free Online Tools</h3>
+            <ul>
+                <li><a href="#">Typing Test</a></li>
+                <li><a href="#">Image Editor</a></li>
+                <li><a href="#">Code Converters</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section2">
+            <h3>Write & Earn</h3>
+            <ul>
+                <li><a href="#">Write an Article</a></li>
+                <li><a href="#">Improve an Article</a></li>
+                <li><a href="#">Share your Experiences</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>DevOps</h3>
+            <ul>
+                <li><a href="#">Git</a></li>
+                <li><a href="#">AWS</a></li>
+                <li><a href="#">Docker</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>System Design</h3>
+            <ul>
+                <li><a href="#">High-Level Design</a></li>
+                <li><a href="#">Low-Level Design</a></li>
+                <li><a href="#">Design Patterns</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>School Subjects</h3>
+            <ul>
+                <li><a href="#">Mathematics</a></li>
+                <li><a href="#">Physics</a></li>
+                <li><a href="#">Chemistry</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Commerce</h3>
+            <ul>
+                <li><a href="#">Accountancy</a></li>
+                <li><a href="#">Economics</a></li>
+                <li><a href="#">Finance</a></li>
+            </ul>
+        </div>
+
+        
+    </div>
+
+    </div>
+
+    <!-- Footer Bottom Section -->
+    <div class="footer-bottom">
+        <p>&copy; 2023 GR Networks. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+<script>
+    function toggleDropdown(dropdownId) {
+        const dropdown = document.getElementById(dropdownId);
+        dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+    }
+
+    // Close dropdowns if clicked outside
+    window.onclick = function(event) {
+        if (!event.target.matches('.nav-link')) {
+            const dropdowns = document.getElementsByClassName("dropdown");
+            for (let i = 0; i < dropdowns.length; i++) {
+                dropdowns[i].style.display = "none";
+            }
+        }
+    };
+
+ // Get elements
+ const hamburger = document.querySelector('.hamburger');
+    const sideNav = document.querySelector('.side-nav');
+    const closeBtn = document.querySelector('.close-btn');
+
+    // Open side-nav when hamburger is clicked
+    hamburger.addEventListener('click', function() {
+        sideNav.classList.add('open');
+    });
+
+    // Close side-nav when close button is clicked
+    closeBtn.addEventListener('click', function() {
+        sideNav.classList.remove('open');
+    });
+
+
+    
+</script>
+
+</body>
+</html>

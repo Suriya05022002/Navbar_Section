@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Networks & Database Management Systems</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f5f7;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Navigation Menu */
+        nav {
+            background: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #3498db;
+            border-radius: 5px;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-left: 5px solid #3498db;
+            padding-left: 10px;
+        }
+
+        .key-points {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        .question h3 {
+            font-size: 1.3em;
+            cursor: pointer;
+            padding: 10px;
+            background: #f1f1f1;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .question h3:hover {
+            background: #e0e0e0;
+        }
+
+        .question h3.active {
+            color: #3498db;
+        }
+
+        .answer {
+            display: none;
+            padding: 15px;
+            background: #f9f9f9;
+            border-left: 4px solid #3498db;
+            border-radius: 5px;
+            margin-top: 5px;
+            color: #444;
+            font-size: 1em;
+        }
+
+        /* Footer Section */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Computer Networks & Database Management Systems</h1>
+
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#networks">Computer Networks</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- Computer Networks Section -->
+    <section id="networks">
+        <h2>Computer Networks</h2>
+        <p>Computer networks allow devices to communicate and share resources. They form the backbone of modern
+            communication systems, enabling data transfer across different types of networks.</p>
+        <div class="key-points">
+            <h3>Key Concepts:</h3>
+            <ul>
+                <li>Network Types: LAN, WAN, MAN</li>
+                <li>Protocols: TCP/IP, HTTP, FTP</li>
+                <li>Network Topologies: Star, Ring, Mesh</li>
+            </ul>
+        </div>
+
+        <!-- Interactive Q&A for Computer Networks -->
+        <div class="question">
+            <h3>What is a LAN?</h3>
+            <div class="answer">
+                <p>A Local Area Network (LAN) is a network that connects devices within a limited area, such as a home,
+                    school, or office building. It enables high-speed data transfer within a localized area.</p>
+            </div>
+        </div>
+        <div class="question">
+            <h3>What is the difference between TCP and UDP?</h3>
+            <div class="answer">
+                <p>TCP (Transmission Control Protocol) is a connection-oriented protocol that ensures reliable data
+                    transfer. UDP (User Datagram Protocol) is connectionless and allows faster, but less reliable, data
+                    transfer.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+   
+
+    <!-- JavaScript for Toggle Answer Visibility -->
+    <script>
+        const questions = document.querySelectorAll(".question h3");
+        questions.forEach((question) => {
+            question.addEventListener("click", () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === "block" ? "none" : "block";
+                question.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+
+</html>

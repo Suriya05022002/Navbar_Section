@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Documentation Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+        }
+        .section {
+            margin: 20px 0;
+            cursor: pointer;
+        }
+        .section-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .content {
+            display: none;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-left: 3px solid #007bff;
+            border-radius: 0 5px 5px 5px;
+            margin-top: 10px;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Design Documentation Overview</h1>
+            <p>An overview of Design Patterns in software engineering.</p>
+        </div>
+
+        
+
+        <div class="section" onclick="toggleSection(this)">
+            <div class="section-title"> Design Patterns</div>
+            <div class="content">
+                <p>Design Patterns are reusable solutions to common problems in software design, organized by purpose and functionality.</p>
+                <h4>Categories of Design Patterns:</h4>
+                <ul>
+                    <li><strong>Creational Patterns</strong>: Manage object creation, such as Singleton and Factory.</li>
+                    <li><strong>Structural Patterns</strong>: Deal with object composition, such as Adapter and Composite.</li>
+                    <li><strong>Behavioral Patterns</strong>: Focus on object communication, such as Observer and Strategy.</li>
+                </ul>
+                <h4>Examples:</h4>
+                <ul>
+                    <li><strong>Singleton</strong>: Ensures a class has only one instance.</li>
+                    <li><strong>Observer</strong>: Allows an object to notify others of state changes.</li>
+                    <li><strong>Factory Method</strong>: Defines an interface for creating objects with subclasses.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSection(section) {
+            const content = section.querySelector('.content');
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

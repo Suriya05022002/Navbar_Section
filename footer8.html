@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Documentation Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+        }
+        .section {
+            margin: 20px 0;
+            cursor: pointer;
+        }
+        .section-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .content {
+            display: none;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-left: 3px solid #007bff;
+            border-radius: 0 5px 5px 5px;
+            margin-top: 10px;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Design Documentation Overview</h1>
+            <p>An overview of High-Level Design in software engineering.</p>
+        </div>
+
+        <div class="section" onclick="toggleSection(this)">
+            <div class="section-title"> High-Level Design (HLD)</div>
+            <div class="content">
+                <p>High-Level Design (HLD) provides a macro view of the system's architecture and serves as the foundation for both Low-Level Design and implementation.</p>
+                <h4>Key Elements of HLD:</h4>
+                <ul>
+                    <li><strong>System Architecture</strong>: Describes the structure of the application, including layers and components.</li>
+                    <li><strong>Module Breakdown</strong>: Defines the main modules and their responsibilities.</li>
+                    <li><strong>Data Flow Diagrams</strong>: Visualizes how data moves across the system.</li>
+                    <li><strong>Technology Stack</strong>: Specifies the tools and frameworks.</li>
+                    <li><strong>API Specifications</strong>: High-level API requirements for component communication.</li>
+                </ul>
+            </div>
+        </div>
+
+       
+    </div>
+
+    <script>
+        function toggleSection(section) {
+            const content = section.querySelector('.content');
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
+-------------------------------------------------------------------------------------------------------------------------------
+
+Low level Design
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Documentation Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+        }
+        .section {
+            margin: 20px 0;
+            cursor: pointer;
+        }
+        .section-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .content {
+            display: none;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-left: 3px solid #007bff;
+            border-radius: 0 5px 5px 5px;
+            margin-top: 10px;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Design Documentation Overview</h1>
+            <p>An overview of Low-Level Design in software engineering.</p>
+        </div>
+
+        
+
+        <div class="section" onclick="toggleSection(this)">
+            <div class="section-title"> Low-Level Design (LLD)</div>
+            <div class="content">
+                <p>Low-Level Design (LLD) provides in-depth details of each component, focusing on the internal logic and implementation of the modules defined in HLD.</p>
+                <h4>Key Elements of LLD:</h4>
+                <ul>
+                    <li><strong>Class Diagrams</strong>: Detailed view of each class, including attributes and relationships.</li>
+                    <li><strong>Function and Method Design</strong>: Specifications for methods and their logic.</li>
+                    <li><strong>Database Design</strong>: Defines table structures, indexes, and relationships.</li>
+                    <li><strong>Sequence Diagrams</strong>: Shows interactions between objects for use cases.</li>
+                    <li><strong>Error Handling and Edge Cases</strong>: Explains how errors and edge cases are managed.</li>
+                </ul>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script>
+        function toggleSection(section) {
+            const content = section.querySelector('.content');
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

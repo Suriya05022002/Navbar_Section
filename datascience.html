@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Navigation</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Hamburger menu icon -->
+<div class="hamburger" onclick="toggleNav()">&#9776;</div>
+
+<!-- Sidebar navigation -->
+<div id="sideNav" class="side-nav">
+    <a href="javascript:void(0)" class="close-btn" onclick="toggleNav()">&times;</a>
+  
+  <div class="scrollable-section">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="frontend.html">Frontend Tutorial</a></li>
+        <li><a href="datascience.html">Python for Data Science</a></li>
+        <li><a href="java.html">Java Programming Basics</a></li>
+        <li><a href="data analyst.html">Data Analyst</a></li>
+        <li><a href="fullstack.html">Full Stack Development</a></li>
+        <li><a href="ux.html">Getting Started with UI/UX</a></li>
+        <li><a href="#">Introduction to Deep Learning</a></li>
+        <li><a href="#">Neural Networks</a></li>
+        <li><a href="#">Convolutional Neural Networks</a></li>
+        <li><a href="#">Recurrent Neural Networks</a></li>
+        
+        <li><a href="#">Data Science Overview</a></li>
+        <li><a href="#">Data Analysis</a></li>
+        <li><a href="#">Data Visualization</a></li>
+        <li><a href="#">Big Data Technologies</a></li>
+          
+            
+        <li><a href="#">Introduction to Deep Learning</a></li>
+        <li><a href="#">Neural Networks</a></li>
+        <li><a href="#">Convolutional Networks</a></li>
+        <li><a href="#">Recurrent Networks</a></li>
+          
+    
+          
+        <li><a href="#">Introduction to Deep Learning</a></li>
+        <li><a href="#">Neural Networks</a></li>
+        <li><a href="#">Convolutional Networks</a></li>
+        <li><a href="#">Recurrent Networks</a></li>
+            
+    
+    </ul>
+  </div>
+</div>
+
+<!-- Main Navbar -->
+
+<nav class="navbar">
+    <div class="nav-links">
+        <div class="nav-link" id="courses-link" aria-haspopup="true" aria-expanded="false" onclick="toggleDropdown('courses-dropdown')">
+            Courses <i class="fa-solid fa-chevron-down"></i>
+            <div class="dropdown" id="courses-dropdown"> 
+                <a href="frontend.html">Web Development</a>
+                <a href="#">Mobile Development</a>
+                <a href="#">Cloud Computing</a>
+                <a href="#">Cyber Security</a>
+                <a href="#">Java</a>
+            </div>
+        </div>
+
+        <div class="nav-link" id="tutorials-link" aria-haspopup="true" aria-expanded="false" onclick="toggleDropdown('tutorials-dropdown')">
+            Tutorials <i class="fa-solid fa-chevron-down"></i>
+            <div class="dropdown" id="tutorials-dropdown">
+                <a href="java.html">Java</a>
+                <a href="#">Python</a>
+                <a href="#">SQL</a>
+                <a href="#">PHP</a>
+            </div>
+        </div>
+
+        <div class="nav-link" id="jobs-link" aria-haspopup="true" aria-expanded="false" onclick="toggleDropdown('jobs-dropdown')">
+            Data Science <i class="fa-solid fa-chevron-down"></i>
+            <div class="dropdown" id="jobs-dropdown">
+                <a href="frontend.html">Frontend</a>
+                <a href="#">Backend</a>
+                <a href="#">Fullstack</a>
+                <a href="#">MERN Stack</a>
+            </div>
+        </div>
+        <div class="nav-link" id="tutorials-link" aria-haspopup="true" aria-expanded="false" onclick="toggleDropdown('tutorials-dropdown')">
+           Practice <i class="fa-solid fa-chevron-down"></i>
+            <div class="dropdown" id="tutorials-dropdown">
+                <a href="java.html">Java</a>
+                <a href="#">Python</a>
+                <a href="#">SQL</a>
+                <a href="#">PHP</a>
+            </div>
+        </div>
+</div>
+
+    <div class="navbar-icons">
+        <button><a class="nav-link" href="#">Sign In</a></button>
+        <a class="nav-link" href="#"><i class="fa-solid fa-bell"></i></a>
+        <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </div>
+</nav>
+
+<!-- Fixed Sub Navbar -->
+ 
+<div class="sub-navbar-container">
+    <nav class="sub-navbar">
+        <a class="nav-link" href="datascience.html">Data Science</a>
+        <a class="nav-link" href="data analyst.html">Data Analysis</a>
+        <a class="nav-link" href="frontend.html">Front End</a>
+        <a class="nav-link" href="fullstack.html">Full Stack Development</a>
+        <a class="nav-link" href="java.html">Java</a>
+        <a class="nav-link" href="#">NLP</a>
+        <a class="nav-link" href="#">Computer Vision</a>
+        <a class="nav-link" href="#">Artificial Intelligence</a>
+        <a class="nav-link" href="#">AI ML DS Interview Series</a>
+        <a class="nav-link" href="#">AI ML DS Projects Series</a>
+        <a class="nav-link" href="#">Data Engineering</a>
+        <a class="nav-link" href="#">Web Scraping</a>
+    </nav>
+</div>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <div class="go-premium">Go Premium</div>
+    <div class="fixed-section">
+        <div>Share Your Experiences</div>
+    </div>
+
+    <div class="scrollable-section">
+        <ul>
+            <li><a href="frontend.html">Frontend Tutorial</a></li>
+            <li><a href="datascience.html">Python for Data Science</a></li>
+            <li><a href="java.html">Java Programming Basics</a></li>
+            <li><a href="data analyst.html">Data Analyst</a></li>
+            <li><a href="index.html">Full Stack Development</a></li>
+            <li><a href="ux.html">Getting Started with UI/UX</a></li>
+        </ul>
+    </div>
+
+    <div class="section-title">Course Categories</div>
+    <ul>
+        <li><a href="#">Introduction to Deep Learning</a></li>
+        <li><a href="#">Neural Networks</a></li>
+        <li><a href="#">Convolutional Neural Networks</a></li>
+        <li><a href="#">Recurrent Neural Networks</a></li>
+    </ul>
+
+    <div class="section-title">Data Science</div>
+        <ul>
+            <li><a href="#">Data Science Overview</a></li>
+            <li><a href="#">Data Analysis</a></li>
+            <li><a href="#">Data Visualization</a></li>
+            <li><a href="#">Big Data Technologies</a></li>
+        </ul>
+        
+        <div class="section-title">Frontend</div>
+        <ul>
+            <li><a href="#">Introduction to Deep Learning</a></li>
+            <li><a href="#">Neural Networks</a></li>
+            <li><a href="#">Convolutional Networks</a></li>
+            <li><a href="#">Recurrent Networks</a></li>
+        </ul>
+
+        <div class="section-title">Backend</div>
+        <ul>
+            <li><a href="#">Introduction to Deep Learning</a></li>
+            <li><a href="#">Neural Networks</a></li>
+            <li><a href="#">Convolutional Networks</a></li>
+            <li><a href="#">Recurrent Networks</a></li>
+        </ul>
+
+        
+</div>
+
+<!-- Main Content -->
+<main class="content">
+     
+    
+        <!-- Introduction Section -->
+        <section class="section">
+            <h2>Introduction to Data Science</h2>
+            <img src="https://cdn.educba.com/academy/wp-content/uploads/2019/03/Introduction-To-Data-Science.jpg" alt="Data Science">
+            <p>Data Science is an interdisciplinary field that uses scientific methods, processes, algorithms, and systems to extract knowledge and insights from structured and unstructured data. It combines expertise in statistics, data analysis, and machine learning to solve complex problems and make informed decisions.</p>
+        </section>
+
+        <!-- Key Components Section -->
+        <section class="section">
+            <h2>Key Components of Data Science</h2>
+            <img src="https://aptronnoida.in/blog/wp-content/uploads/2021/01/Data-Science-Course-in-Noida.jpg" alt="Key Components">
+            <p>Data Science involves several key components:</p>
+            <ul>
+                <li><strong>Data Collection:</strong> Gathering data from various sources such as databases, APIs, and web scraping.</li>
+                <li><strong>Data Cleaning:</strong> Removing noise and inconsistencies from the data to ensure accuracy and reliability.</li>
+                <li><strong>Data Analysis:</strong> Using statistical and computational techniques to explore and understand the data.</li>
+                <li><strong>Data Visualization:</strong> Creating graphical representations of data to identify patterns, trends, and insights.</li>
+            </ul>
+        </section>
+
+        <!-- Process Section -->
+        <section class="section">
+            <h2>Data Science Process</h2>
+            <img src="https://www.analytixlabs.co.in/blog/wp-content/uploads/2021/09/Blog-02-1.jpg" alt="Data Science Process">
+            <p>The data science process involves several stages:</p>
+            <ol>
+                <li>Define the Problem: Clearly understand and define the problem to be solved.</li>
+                <li>Collect Data: Gather relevant data from various sources.</li>
+                <li>Clean Data: Process and clean the data to ensure its quality.</li>
+                <li>Analyze Data: Apply statistical and machine learning techniques to analyze the data.</li>
+                <li>Visualize Data: Create visualizations to communicate findings and insights.</li>
+                <li>Deploy Model: Implement the solution or model into production.</li>
+                <li>Monitor and Maintain Model: Continuously monitor and update the model to ensure its effectiveness.</li>
+            </ol>
+        </section>
+
+        <!-- Techniques Section -->
+        <section class="section">
+            <h2>Data Science Techniques</h2>
+            <img src="https://www.theknowledgeacademy.com/_files/images/Types_of_Data_Science_Techniques%281%29.png" alt="Techniques">
+            <p>Several techniques are commonly used in data science:</p>
+            <ul>
+                <li><strong>Machine Learning:</strong> Building models that can learn from and make predictions on data.</li>
+                <li><strong>Statistical Analysis:</strong> Applying statistical methods to analyze and interpret data.</li>
+                <li><strong>Data Mining:</strong> Discovering patterns and relationships in large datasets.</li>
+                <li><strong>Deep Learning:</strong> Using neural networks to analyze complex data and make predictions.</li>
+            </ul>
+        </section>
+
+        <!-- Tools Section -->
+        <section class="section">
+            <h2>Data Science Tools</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg7U_MtC5t5Khgxy2Ul8jT3vD96iRuqXEfFg&s" alt="Tools">
+            <p>Data scientists use various tools for different aspects of their work:</p>
+            <ul>
+                <li><strong>Python:</strong> A versatile programming language widely used for data analysis and machine learning.</li>
+                <li><strong>R:</strong> A language and environment for statistical computing and graphics.</li>
+                <li><strong>SQL:</strong> A language for managing and querying relational databases.</li>
+                <li><strong>Tableau:</strong> A data visualization tool for creating interactive and shareable dashboards.</li>
+            </ul>
+        </section>
+
+        <!-- Applications Section -->
+        <section class="section">
+            <h2>Applications of Data Science</h2>
+            <img src="https://www.collidu.com/media/catalog/product/img1/6/d/6de4a7f215ed7f2e568bffd61844921b4aa12cd8595de8ed3d9d3d85abb43480/applications-of-data-science-slide1.png" alt="Applications">
+            <p>Data science is applied across various domains:</p>
+            <ul>
+                <li><strong>Healthcare:</strong> Predictive analytics for patient outcomes and disease prevention.</li>
+                <li><strong>Finance:</strong> Fraud detection, risk management, and algorithmic trading.</li>
+                <li><strong>Marketing:</strong> Customer segmentation, sentiment analysis, and campaign optimization.</li>
+                <li><strong>Retail:</strong> Inventory management, sales forecasting, and recommendation systems.</li>
+            </ul>
+        </section>
+    </main>
+
+
+<hr><br><br>
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <!-- Company Info -->
+        <div class="footer-section company-info">
+            <div class="company-logo">
+                <img src="company-logo.png" alt="Company Logo">
+                <span>GR Networks</span>
+            </div>
+            <p><i class="fa-solid fa-location-dot"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nihil facilis exercitationem neque incidunt ad doloribus ullam cum voluptates! Sit?</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/gowthamrajnetwork"></a><img src="facebook.png" width="40" height="40" loading="lazy" alt="instagram">
+                <a href="https://www.instagram.com/gowthamraj_network/"></a> <img src="instagram.jpeg"  width="40" height="40" loading="lazy" alt="instagram">
+                <a href="https://www.linkedin.com/company/gowthamrajnetwork/"></a> <img src="linkedin.png" width="40" height="40" loading="lazy" alt="instagram">
+                <a href="https://www.youtube.com/@GOWTHAMRAJNETWORK"></a> <img src="u tube.png" width="40" height="40" loading="lazy" alt="instagram">
+                
+            </div>
+        </div>
+
+        <!-- Footer Links Sections -->
+        <!-- Add all your footer sections here as per your structure -->
+<!-- Footer Links Sections -->
+<div class="footer-section">
+    <h3>Python Tutorial</h3>
+    <ul>
+        <li><a href="footer.html">python Programming</a></li>
+        <li><a href="footer1.html">Examples</a></li>
+        <li><a href="footer2.html">Django Tutorial</a></li>
+        <li><a href="footer3.html">Python Projects</a></li>
+        <li><a href="footer4.html">Python Interview Questions</a></li>
+        <li><a href="footer5..html">Python Programming</a></li>
+        <li><a href="footer6.html">Examples</a></li>
+        <li><a href="footer7.html">Django Tutorial</a></li>
+    
+    </ul>
+</div>
+
+<div class="footer-section">
+    <h3>Computer Science</h3>
+    <ul>
+        <li><a href="footer8.html">Operating Systems</a></li>
+        <li><a href="footer9.html">Computer Networks</a></li>
+        <li><a href="footer10.html">Database Management</a></li>
+        <li><a href="#">Computer Networks</a></li>
+        <li><a href="#">Database Management</a></li>
+    </ul>
+</div>
+
+        <div class="footer-section">
+            <h3>DevOps</h3>
+            <ul>
+                <li><a href="#">Git</a></li>
+                <li><a href="#">AWS</a></li>
+                <li><a href="#">Docker</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>System Design</h3>
+            <ul>
+                <li><a href="#">High-Level Design</a></li>
+                <li><a href="#">Low-Level Design</a></li>
+                <li><a href="#">Design Patterns</a></li>
+                <li><a href="#">Computer Networks</a></li>
+                <li><a href="#">Database Management</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>School Subjects</h3>
+            <ul>
+                <li><a href="#">Mathematics</a></li>
+                <li><a href="#">Physics</a></li>
+                <li><a href="#">Chemistry</a></li>
+                <li><a href="#">Economics</a></li>
+                <li><a href="#">Finance</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section1">
+            <h3>Java Tutorial</h3>
+            <ul>
+                <li><a href="#">Java Programming</a></li>
+                <li><a href="#">Examples</a></li>
+                <li><a href="#">Core java Tutorial</a></li>
+                <li><a href="#">java Projects</a></li>
+                <li><a href="#">java Interview Questions</a></li>
+                <li><a href="#">java Programming</a></li>
+                <li><a href="#">Examples</a></li>
+              
+            
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Databases</h3>
+            <ul>
+                <li><a href="#">SQL</a></li>
+                <li><a href="#">MySQL</a></li>
+                <li><a href="#">MongoDB</a></li><li><a href="#">Economics</a></li>
+                <li><a href="#">Finance</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Competitive Exams</h3>
+            <ul>
+                <li><a href="#">JEE Advanced</a></li>
+                <li><a href="#">UPSC</a></li>
+                <li><a href="#">SSC CGL</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>More Tutorials</h3>
+            <ul>
+                <li><a href="#">Software Development</a></li>
+                <li><a href="#">Product Management</a></li>
+                <li><a href="#">Project Management</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Free Online Tools</h3>
+            <ul>
+                <li><a href="#">Typing Test</a></li>
+                <li><a href="#">Image Editor</a></li>
+                <li><a href="#">Code Converters</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section2">
+            <h3>Write & Earn</h3>
+            <ul>
+                <li><a href="#">Write an Article</a></li>
+                <li><a href="#">Improve an Article</a></li>
+                <li><a href="#">Share your Experiences</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>DevOps</h3>
+            <ul>
+                <li><a href="#">Git</a></li>
+                <li><a href="#">AWS</a></li>
+                <li><a href="#">Docker</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>System Design</h3>
+            <ul>
+                <li><a href="#">High-Level Design</a></li>
+                <li><a href="#">Low-Level Design</a></li>
+                <li><a href="#">Design Patterns</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>School Subjects</h3>
+            <ul>
+                <li><a href="#">Mathematics</a></li>
+                <li><a href="#">Physics</a></li>
+                <li><a href="#">Chemistry</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Commerce</h3>
+            <ul>
+                <li><a href="#">Accountancy</a></li>
+                <li><a href="#">Economics</a></li>
+                <li><a href="#">Finance</a></li>
+            </ul>
+        </div>
+
+        
+    </div>
+
+    </div>
+
+    <!-- Footer Bottom Section -->
+    <div class="footer-bottom">
+        <p>&copy; 2023 GR Networks. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+<script>
+    function toggleDropdown(dropdownId) {
+        const dropdown = document.getElementById(dropdownId);
+        dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+    }
+
+    // Close dropdowns if clicked outside
+    window.onclick = function(event) {
+        if (!event.target.matches('.nav-link')) {
+            const dropdowns = document.getElementsByClassName("dropdown");
+            for (let i = 0; i < dropdowns.length; i++) {
+                dropdowns[i].style.display = "none";
+            }
+        }
+    };
+
+   // Get elements
+   const hamburger = document.querySelector('.hamburger');
+    const sideNav = document.querySelector('.side-nav');
+    const closeBtn = document.querySelector('.close-btn');
+
+    // Open side-nav when hamburger is clicked
+    hamburger.addEventListener('click', function() {
+        sideNav.classList.add('open');
+    });
+
+    // Close side-nav when close button is clicked
+    closeBtn.addEventListener('click', function() {
+        sideNav.classList.remove('open');
+    });
+
+
+    
+</script>
+
+</body>
+</html>

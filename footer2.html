@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9fafb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 3em;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        /* Navigation Menu */
+        nav {
+            background: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            font-weight: 500;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        nav ul li a:hover {
+            background: #2575fc;
+            color: #fff;
+            border-radius: 5px;
+            transform: translateY(-2px);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #6a11cb;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-left: 5px solid #6a11cb;
+            padding-left: 10px;
+        }
+
+        .project {
+            margin-bottom: 30px;
+        }
+
+        .project h3 {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .project p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        /* Code Block Styling */
+        pre {
+            background: #272727;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 1em;
+            overflow-x: auto;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+        }
+
+        /* Footer Section */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Python Projects</h1>
+        <p>Explore Python projects from beginner to advanced levels to enhance your programming skills.</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#beginner">Beginner Projects</a></li>
+            <li><a href="#intermediate">Intermediate Projects</a></li>
+            <li><a href="#advanced">Advanced Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <section id="beginner">
+        <h2>Beginner Python Projects</h2>
+        <div class="project">
+            <h3>1. Hello World Program</h3>
+            <p>This is the most basic Python program, which prints "Hello, World!" to the screen.</p>
+            <pre><code>print("Hello, World!")</code></pre>
+        </div>
+        <div class="project">
+            <h3>2. Simple Calculator</h3>
+            <p>A calculator that performs basic arithmetic operations.</p>
+            <pre><code>def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+print(add(5, 3))
+print(subtract(10, 4))</code></pre>
+        </div>
+    </section>
+
+    <section id="intermediate">
+        <h2>Intermediate Python Projects</h2>
+        <div class="project">
+            <h3>1. To-Do List App</h3>
+            <p>A simple console-based to-do list application to manage tasks.</p>
+            <pre><code>tasks = []
+
+def add_task(task):
+    tasks.append(task)
+
+def show_tasks():
+    for task in tasks:
+        print(task)
+
+add_task("Finish Python tutorial")
+show_tasks()</code></pre>
+        </div>
+        <div class="project">
+            <h3>2. Password Generator</h3>
+            <p>Generates a random password of a specified length with letters, numbers, and symbols.</p>
+            <pre><code>import random
+import string
+
+def generate_password(length=8):
+    characters = string.ascii_letters + string.digits + string.punctuation
+    return ''.join(random.choice(characters) for i in range(length))
+
+print(generate_password(12))</code></pre>
+        </div>
+    </section>
+
+    <section id="advanced">
+        <h2>Advanced Python Projects</h2>
+        <div class="project">
+            <h3>1. Web Scraper</h3>
+            <p>Scrapes data from a website and stores it in a CSV file.</p>
+            <pre><code>import requests
+from bs4 import BeautifulSoup
+import csv
+
+url = "http://example.com"
+response = requests.get(url)
+soup = BeautifulSoup(response.text, 'html.parser')
+
+with open("data.csv", "w") as file:
+    writer = csv.writer(file)
+    writer.writerow(["Title", "Link"])
+    for item in soup.find_all('a'):
+        writer.writerow([item.text, item.get('href')])</code></pre>
+        </div>
+        <div class="project">
+            <h3>2. Weather App</h3>
+            <p>A weather application that fetches current weather data from an API.</p>
+            <pre><code>import requests
+
+def get_weather(city):
+    api_key = "your_api_key"
+    url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}"
+    response = requests.get(url)
+    data = response.json()
+    print(data["weather"][0]["description"])
+
+get_weather("New York")</code></pre>
+        </div>
+    </section>
+
+   
+</body>
+
+</html>

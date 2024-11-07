@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science: Operating Systems</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f5f7;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, #1f8bff, #21cbff);
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Navigation Menu */
+        nav {
+            background: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #21cbff;
+            border-radius: 5px;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #1f8bff;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-left: 5px solid #1f8bff;
+            padding-left: 10px;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        .question h3 {
+            font-size: 1.3em;
+            cursor: pointer;
+            padding: 10px;
+            background: #f1f1f1;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .question h3:hover {
+            background: #e0e0e0;
+        }
+
+        .question h3.active {
+            color: #1f8bff;
+        }
+
+        .answer {
+            display: none;
+            padding: 15px;
+            background: #f9f9f9;
+            border-left: 4px solid #21cbff;
+            border-radius: 5px;
+            margin-top: 5px;
+            color: #444;
+            font-size: 1em;
+        }
+
+        /* Footer Section */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Computer Science: Operating Systems</h1>
+        <p>Learn the fundamentals of operating systems, including process management, memory, and file systems.</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#process-management">Process Management</a></li>
+            <li><a href="#memory-management">Memory Management</a></li>
+            <li><a href="#file-systems">File Systems</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content Sections -->
+    <section id="overview">
+        <h2>Overview of Operating Systems</h2>
+        <p>An operating system (OS) is software that manages hardware resources and provides services to other software
+            applications. It acts as an intermediary between users and the computer hardware.</p>
+        <div class="key-points">
+            <h3>Key Points:</h3>
+            <ul>
+                <li>Resource management: CPU, memory, and I/O devices.</li>
+                <li>Provides a user interface (UI) for interaction.</li>
+                <li>Facilitates multitasking and multi-user capabilities.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="process-management">
+        <h2>Process Management</h2>
+        <p>Process management involves handling processes in an OS, including creation, scheduling, and termination. It
+            ensures that CPU time is shared efficiently among processes.</p>
+        <div class="question">
+            <h3>What is a process?</h3>
+            <div class="answer">
+                <p>A process is an instance of a program that is being executed. It includes the program code, current
+                    activity, and associated resources like memory and file handles.</p>
+            </div>
+        </div>
+        <div class="question">
+            <h3>What is the purpose of process scheduling?</h3>
+            <div class="answer">
+                <p>Process scheduling is used to allocate CPU time to different processes, ensuring fair and efficient
+                    utilization of the CPU. Common algorithms include FCFS, SJF, and Round Robin.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="memory-management">
+        <h2>Memory Management</h2>
+        <p>Memory management oversees the allocation and deallocation of memory spaces to various processes, optimizing
+            performance and preventing memory conflicts.</p>
+        <div class="question">
+            <h3>Explain virtual memory.</h3>
+            <div class="answer">
+                <p>Virtual memory allows the OS to use disk space as additional RAM. This enables the execution of
+                    larger applications than the actual physical memory.</p>
+            </div>
+        </div>
+        <div class="question">
+            <h3>What is paging?</h3>
+            <div class="answer">
+                <p>Paging is a memory management scheme that eliminates the need for contiguous memory allocation by
+                    dividing memory into fixed-size pages.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="file-systems">
+        <h2>File Systems</h2>
+        <p>The file system is responsible for storing, retrieving, and managing data files on storage devices.</p>
+        <div class="question">
+            <h3>What is a file system?</h3>
+            <div class="answer">
+                <p>A file system organizes and manages files on a storage device. It handles operations like file
+                    creation, deletion, and reading/writing.</p>
+            </div>
+        </div>
+        <div class="question">
+            <h3>Explain file allocation methods.</h3>
+            <div class="answer">
+                <p>File allocation methods define how files are stored on disk, including contiguous, linked, and
+                    indexed allocation.</p>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <!-- JavaScript for Toggle Answer Visibility -->
+    <script>
+        const questions = document.querySelectorAll(".question h3");
+        questions.forEach((question) => {
+            question.addEventListener("click", () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === "block" ? "none" : "block";
+                question.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+
+</html>

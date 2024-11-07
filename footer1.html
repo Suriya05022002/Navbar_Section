@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Interview Questions</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7f9;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Navigation Menu */
+        nav {
+            background: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            font-weight: 500;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        nav ul li a:hover {
+            background: #2575fc;
+            border-radius: 5px;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #6a11cb;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-left: 5px solid #6a11cb;
+            padding-left: 10px;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        .question h3 {
+            font-size: 1.3em;
+            cursor: pointer;
+            padding: 10px;
+            background: #f1f1f1;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .question h3:hover {
+            background: #e0e0e0;
+        }
+
+        .question h3.active {
+            color: #6a11cb;
+        }
+
+        .answer {
+            display: none;
+            padding: 15px;
+            background: #f9f9f9;
+            border-left: 4px solid #2575fc;
+            border-radius: 5px;
+            margin-top: 5px;
+            color: #444;
+            font-size: 1em;
+        }
+
+        /* Footer Section */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Python Interview Questions</h1>
+        <p>Prepare for your Python interview with these commonly asked questions and answers.</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#beginner">Beginner</a></li>
+            <li><a href="#intermediate">Intermediate</a></li>
+            <li><a href="#advanced">Advanced</a></li>
+        </ul>
+    </nav>
+
+    <!-- Question Sections -->
+    <section id="beginner">
+        <h2>Beginner Level Questions</h2>
+        <div class="question">
+            <h3>1. What is Python?</h3>
+            <div class="answer">
+                <p>Python is a high-level, interpreted programming language known for its simplicity and readability.
+                    It's widely used for web development, data analysis, machine learning, automation, and more.</p>
+            </div>
+        </div>
+        <div class="question">
+            <h3>2. What is the difference between lists and tuples?</h3>
+            <div class="answer">
+                <p>Lists are mutable, meaning they can be modified after creation, while tuples are immutable. Lists use
+                    square brackets `[]`, while tuples use parentheses `()`.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="intermediate">
+        <h2>Intermediate Level Questions</h2>
+        <div class="question">
+            <h3>1. Explain list comprehension with an example.</h3>
+            <div class="answer">
+                <p>List comprehension provides a concise way to create lists. For example, to create a list of squares
+                    from 1 to 10: <code>squares = [x**2 for x in range(1, 11)]</code></p>
+            </div>
+        </div>
+        <div class="question">
+            <h3>2. What is a lambda function?</h3>
+            <div class="answer">
+                <p>A lambda function is an anonymous function defined with the <code>lambda</code> keyword. It's often
+                    used for short, simple functions. Example: <code>add = lambda x, y: x + y</code></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="advanced">
+        <h2>Advanced Level Questions</h2>
+        <div class="question">
+            <h3>1. What are Python decorators, and how are they used?</h3>
+            <div class="answer">
+                <p>Decorators are a way to modify or extend the behavior of functions or methods without changing their
+                    code. They are defined with the <code>@</code> symbol and are often used to add functionalities like
+                    logging or authentication.</p>
+            </div>
+        </div>
+        <div class="question">
+            <h3>2. Explain the Global Interpreter Lock (GIL) in Python.</h3>
+            <div class="answer">
+                <p>The GIL is a mutex that protects access to Python objects, preventing multiple native threads from
+                    executing Python bytecodes at once. This can be a limitation for multi-threaded Python programs,
+                    especially in CPU-bound tasks.</p>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- JavaScript for Toggle Answer Visibility -->
+    <script>
+        const questions = document.querySelectorAll(".question h3");
+        questions.forEach((question) => {
+            question.addEventListener("click", () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === "block" ? "none" : "block";
+                question.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+
+</html>

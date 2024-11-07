@@ -1,0 +1,1110 @@
+
+---------------------------------------------------------------------------------------------------
+Python Interview
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Python PROJECT
+
+-----------------------------------------------------------------------------------------------------------------------------
+Python PROGRAM
+
+---------------------------------------------------------------------------------------------------------------------------
+                    COMPUTER SCIENCE
+
+Operating System
+
+----------------------------------------------------------------------------------------------------------------------
+
+DAtabase 
+
+------------------------------------------------------------------------------------------------------------------------
+Network
+
+------------------------------------------------------------------------------------------------------------------
+                                  DESIGN 
+
+High level Design
+
+----------------------=-----------------------------------------------------------------------------------------------
+
+SD
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Documentation Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+        }
+        .section {
+            margin: 20px 0;
+            cursor: pointer;
+        }
+        .section-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .content {
+            display: none;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-left: 3px solid #007bff;
+            border-radius: 0 5px 5px 5px;
+            margin-top: 10px;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Design Documentation Overview</h1>
+            <p>An overview of Design Patterns in software engineering.</p>
+        </div>
+
+        
+
+        <div class="section" onclick="toggleSection(this)">
+            <div class="section-title"> Design Patterns</div>
+            <div class="content">
+                <p>Design Patterns are reusable solutions to common problems in software design, organized by purpose and functionality.</p>
+                <h4>Categories of Design Patterns:</h4>
+                <ul>
+                    <li><strong>Creational Patterns</strong>: Manage object creation, such as Singleton and Factory.</li>
+                    <li><strong>Structural Patterns</strong>: Deal with object composition, such as Adapter and Composite.</li>
+                    <li><strong>Behavioral Patterns</strong>: Focus on object communication, such as Observer and Strategy.</li>
+                </ul>
+                <h4>Examples:</h4>
+                <ul>
+                    <li><strong>Singleton</strong>: Ensures a class has only one instance.</li>
+                    <li><strong>Observer</strong>: Allows an object to notify others of state changes.</li>
+                    <li><strong>Factory Method</strong>: Defines an interface for creating objects with subclasses.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSection(section) {
+            const content = section.querySelector('.content');
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
+--------------------------------------------------------
+                               DEVOPS
+
+GIT
+
+----------------------------------------
+DEvops
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DevOps</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f5f7;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Navigation Menu */
+        nav {
+            background: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #2a5298;
+            border-radius: 5px;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #1e3c72;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-left: 5px solid #2a5298;
+            padding-left: 10px;
+        }
+
+        .key-points {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        .question h3 {
+            font-size: 1.3em;
+            cursor: pointer;
+            padding: 10px;
+            background: #f1f1f1;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .question h3:hover {
+            background: #e0e0e0;
+        }
+
+        .question h3.active {
+            color: #2a5298;
+        }
+
+        .answer {
+            display: none;
+            padding: 15px;
+            background: #f9f9f9;
+            border-left: 4px solid #2a5298;
+            border-radius: 5px;
+            margin-top: 5px;
+            color: #444;
+            font-size: 1em;
+        }
+
+        /* Footer Section */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1> DevOps </h1>
+        <p>Explore foundational concepts in version control, continuous integration, and containerization.</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            
+            <li><a href="#devops">DevOps</a></li>
+           
+        </ul>
+    </nav>
+
+    
+    <!-- <section id="git">
+        <h2>GIT</h2>
+        <p>GIT is a distributed version control system that tracks changes in source code, enabling multiple developers
+            to collaborate on a project efficiently.</p>
+        <div class="key-points">
+            <h3>Key Concepts:</h3>
+            <ul>
+                <li>Version Control: Managing changes to source code</li>
+                <li>Branches: Parallel lines of development</li>
+                <li>Commits: Snapshots of changes</li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <h3>What is a GIT branch?</h3>
+            <div class="answer">
+                <p>A branch in GIT allows multiple developers to work on different parts of a project simultaneously
+                    without affecting the main codebase.</p>
+            </div>
+        </div>
+        <div class="question">
+            <h3>How does a GIT commit work?</h3>
+            <div class="answer">
+                <p>A GIT commit saves changes made to files in a repository, along with a unique message describing what
+                    was changed. It acts as a snapshot of the project at that moment.</p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- DevOps Section -->
+    <section id="devops">
+        <h2>DevOps</h2>
+        <p>DevOps is a culture and set of practices that combine software development (Dev) and IT operations (Ops) to
+            shorten the development lifecycle and deliver high-quality software.</p>
+        <div class="key-points">
+            <h3>Key Concepts:</h3>
+            <ul>
+                <li>Continuous Integration: Frequent code integration and testing</li>
+                <li>Continuous Deployment: Automating releases to production</li>
+                <li>Monitoring: Tracking performance and issues in real-time</li>
+            </ul>
+        </div>
+
+        <!-- Interactive Q&A for DevOps -->
+        <div class="question">
+            <h3>What is Continuous Integration (CI)?</h3>
+            <div class="answer">
+                <p>CI is a practice where developers frequently merge code changes into a shared repository, with each
+                    change automatically tested to detect issues early.</p>
+            </div>
+        </div>
+        <div class="question">
+            <h3>How does Continuous Deployment (CD) work?</h3>
+            <div class="answer">
+                <p>CD automates the process of deploying code changes to production, ensuring faster and more reliable
+                    releases.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Docker Section -->
+    <!-- <section id="docker">
+        <h2>Docker</h2>
+        <p>Docker is a platform that allows developers to create, deploy, and run applications in lightweight, isolated
+            containers that work consistently across various environments.</p>
+        <div class="key-points">
+            <h3>Key Concepts:</h3>
+            <ul>
+                <li>Containers: Lightweight environments for running applications</li>
+                <li>Images: Blueprints for creating containers</li>
+                <li>Docker Hub: Repository for Docker images</li>
+            </ul>
+        </div>
+
+        
+        <div class="question">
+            <h3>What is a Docker container?</h3>
+            <div class="answer">
+                <p>A Docker container is a standalone, lightweight environment that packages an application and all its
+                    dependencies, enabling it to run consistently across different platforms.</p>
+            </div>
+        </div>
+        <div class="question">
+            <h3>What is Docker Hub?</h3>
+            <div class="answer">
+                <p>Docker Hub is a cloud-based repository where users can find and share Docker images, simplifying the
+                    setup of development environments.</p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 DevOps Tutorial | Discover the essentials of GIT, DevOps, and Docker!</p>
+    </footer>
+
+    <!-- JavaScript for Toggle Answer Visibility -->
+    <script>
+        const questions = document.querySelectorAll(".question h3");
+        questions.forEach((question) => {
+            question.addEventListener("click", () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === "block" ? "none" : "block";
+                question.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+
+</html>
+----------------------------------------------------
+Docker
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Docker</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f5f7;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Navigation Menu */
+        nav {
+            background: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #2a5298;
+            border-radius: 5px;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #1e3c72;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-left: 5px solid #2a5298;
+            padding-left: 10px;
+        }
+
+        .key-points {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        .question h3 {
+            font-size: 1.3em;
+            cursor: pointer;
+            padding: 10px;
+            background: #f1f1f1;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .question h3:hover {
+            background: #e0e0e0;
+        }
+
+        .question h3.active {
+            color: #2a5298;
+        }
+
+        .answer {
+            display: none;
+            padding: 15px;
+            background: #f9f9f9;
+            border-left: 4px solid #2a5298;
+            border-radius: 5px;
+            margin-top: 5px;
+            color: #444;
+            font-size: 1em;
+        }
+
+        /* Footer Section */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1> Docker</h1>
+        <p>Explore foundational concepts in version control, continuous integration, and containerization.</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+
+            <li><a href="#docker">Docker</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <!-- Docker Section -->
+    <section id="docker">
+        <h2>Docker</h2>
+        <p>Docker is a platform that allows developers to create, deploy, and run applications in lightweight, isolated
+            containers that work consistently across various environments.</p>
+        <div class="key-points">
+            <h3>Key Concepts:</h3>
+            <ul>
+                <li>Containers: Lightweight environments for running applications</li>
+                <li>Images: Blueprints for creating containers</li>
+                <li>Docker Hub: Repository for Docker images</li>
+            </ul>
+        </div>
+
+        <!-- Interactive Q&A for Docker -->
+        <div class="question">
+            <h3>What is a Docker container?</h3>
+            <div class="answer">
+                <p>A Docker container is a standalone, lightweight environment that packages an application and all its
+                    dependencies, enabling it to run consistently across different platforms.</p>
+            </div>
+        </div>
+        <div class="question">
+            <h3>What is Docker Hub?</h3>
+            <div class="answer">
+                <p>Docker Hub is a cloud-based repository where users can find and share Docker images, simplifying the
+                    setup of development environments.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 DevOps Tutorial | Discover the essentials of Docker!</p>
+    </footer>
+
+    <!-- JavaScript for Toggle Answer Visibility -->
+    <script>
+        const questions = document.querySelectorAll(".question h3");
+        questions.forEach((question) => {
+            question.addEventListener("click", () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === "block" ? "none" : "block";
+                question.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+=---------------------------------------------------
+                                     SCHOOL SUBJECT
+
+PYHSICS
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 20px;
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+        }
+        .section {
+            margin: 20px 0;
+            cursor: pointer;
+        }
+        .section-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .content {
+            display: none;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-left: 3px solid #28a745;
+            border-radius: 0 5px 5px 5px;
+            margin-top: 10px;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Subject Overview</h1>
+            <p>Click on the subject to learn more about its key topics and concepts.</p>
+        </div>
+
+        
+
+        <div class="section" onclick="toggleSection(this)">
+            <div class="section-title">Physics</div>
+            <div class="content">
+                <p>Physics is the science of matter, energy, and their interactions. It explains the fundamental laws governing the universe.</p>
+                <h4>Key Topics:</h4>
+                <ul>
+                    <li><strong>Mechanics</strong>: Studies motion and forces on objects.</li>
+                    <li><strong>Electromagnetism</strong>: The study of electric and magnetic fields.</li>
+                    <li><strong>Thermodynamics</strong>: Concerns heat, energy, and work in systems.</li>
+                    <li><strong>Quantum Physics</strong>: Explores the behavior of matter on atomic and subatomic scales.</li>
+                </ul>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script>
+        function toggleSection(section) {
+            const content = section.querySelector('.content');
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
+
+-----------------------------------
+mathematics
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 20px;
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+        }
+        .section {
+            margin: 20px 0;
+            cursor: pointer;
+        }
+        .section-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .content {
+            display: none;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-left: 3px solid #28a745;
+            border-radius: 0 5px 5px 5px;
+            margin-top: 10px;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Subject Overview</h1>
+            <p>Click on the subject to learn more about its key topics and concepts.</p>
+        </div>
+
+        <div class="section" onclick="toggleSection(this)">
+            <div class="section-title">Mathematics</div>
+            <div class="content">
+                <p>Mathematics is the study of numbers, shapes, and patterns. It is used as a foundational tool in various fields such as physics, engineering, and economics.</p>
+                <h4>Key Topics:</h4>
+                <ul>
+                    <li><strong>Algebra</strong>: The study of symbols and rules for manipulating those symbols.</li>
+                    <li><strong>Calculus</strong>: Deals with change and motion, including derivatives and integrals.</li>
+                    <li><strong>Geometry</strong>: Focuses on properties and relations of points, lines, and shapes.</li>
+                    <li><strong>Statistics</strong>: The study of data collection, analysis, and interpretation.</li>
+                </ul>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script>
+        function toggleSection(section) {
+            const content = section.querySelector('.content');
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
+----------------------------------------------------
+chemistry
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 20px;
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+        }
+        .section {
+            margin: 20px 0;
+            cursor: pointer;
+        }
+        .section-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .content {
+            display: none;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-left: 3px solid #28a745;
+            border-radius: 0 5px 5px 5px;
+            margin-top: 10px;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Subject Overview</h1>
+            <p>Click on the subject to learn more about its key topics and concepts.</p>
+        </div>
+
+        
+
+        <div class="section" onclick="toggleSection(this)">
+            <div class="section-title">Chemistry</div>
+            <div class="content">
+                <p>Chemistry is the study of matter, its properties, and reactions. It connects with biology, physics, and material science.</p>
+                <h4>Key Topics:</h4>
+                <ul>
+                    <li><strong>Organic Chemistry</strong>: Focuses on carbon-containing compounds.</li>
+                    <li><strong>Inorganic Chemistry</strong>: Deals with compounds not classified as organic.</li>
+                    <li><strong>Physical Chemistry</strong>: Combines physics and chemistry to study chemical systems.</li>
+                    <li><strong>Analytical Chemistry</strong>: Techniques to analyze and identify substances.</li>
+                </ul>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script>
+        function toggleSection(section) {
+            const content = section.querySelector('.content');
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
+----------------------------
+finance
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 20px;
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+        }
+        .section {
+            margin: 20px 0;
+            cursor: pointer;
+        }
+        .section-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .content {
+            display: none;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-left: 3px solid #28a745;
+            border-radius: 0 5px 5px 5px;
+            margin-top: 10px;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Subject Overview</h1>
+            <p>Click on the subject to learn more about its key topics and concepts.</p>
+        </div>
+
+        
+
+        <div class="section" onclick="toggleSection(this)">
+            <div class="section-title">Finance</div>
+            <div class="content">
+                <p>Finance involves managing money, investments, and other financial instruments. It plays a crucial role in both personal and business contexts.</p>
+                <h4>Key Topics:</h4>
+                <ul>
+                    <li><strong>Corporate Finance</strong>: Deals with a corporation’s funding, capital structuring, and investment decisions.</li>
+                    <li><strong>Personal Finance</strong>: Managing individual or household finances, including budgeting and saving.</li>
+                    <li><strong>Investment</strong>: The practice of allocating resources to assets with potential returns.</li>
+                    <li><strong>Financial Markets</strong>: Markets where securities are traded, including stock, bond, and commodity markets.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSection(section) {
+            const content = section.querySelector('.content');
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
+--------------------------------------
+economics
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 20px;
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+        }
+        .section {
+            margin: 20px 0;
+            cursor: pointer;
+        }
+        .section-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .content {
+            display: none;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-left: 3px solid #28a745;
+            border-radius: 0 5px 5px 5px;
+            margin-top: 10px;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Subject Overview</h1>
+            <p>Click on the subject to learn more about its key topics and concepts.</p>
+        </div>
+
+        
+
+        <div class="section" onclick="toggleSection(this)">
+            <div class="section-title">Economics</div>
+            <div class="content">
+                <p>Economics studies how individuals, businesses, and governments make decisions about resources and wealth distribution.</p>
+                <h4>Key Topics:</h4>
+                <ul>
+                    <li><strong>Microeconomics</strong>: Focuses on individual and business decision-making.</li>
+                    <li><strong>Macroeconomics</strong>: Examines the economy as a whole, including inflation, GDP, and unemployment.</li>
+                    <li><strong>International Economics</strong>: Studies trade and finance on a global scale.</li>
+                    <li><strong>Development Economics</strong>: Focuses on improving economic conditions in low-income countries.</li>
+                </ul>
+            </div>
+        </div>
+
+       
+    </div>
+
+    <script>
+        function toggleSection(section) {
+            const content = section.querySelector('.content');
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>                                  
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Networks & Database Management Systems</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f5f7;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Navigation Menu */
+        nav {
+            background: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #3498db;
+            border-radius: 5px;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-left: 5px solid #3498db;
+            padding-left: 10px;
+        }
+
+        .key-points {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        .question h3 {
+            font-size: 1.3em;
+            cursor: pointer;
+            padding: 10px;
+            background: #f1f1f1;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .question h3:hover {
+            background: #e0e0e0;
+        }
+
+        .question h3.active {
+            color: #3498db;
+        }
+
+        .answer {
+            display: none;
+            padding: 15px;
+            background: #f9f9f9;
+            border-left: 4px solid #3498db;
+            border-radius: 5px;
+            margin-top: 5px;
+            color: #444;
+            font-size: 1em;
+        }
+
+        /* Footer Section */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+
+        <p>Explore foundational concepts in computer networks and database management systems.</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+
+            <li><a href="#dbms">Database Management Systems</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Database Management Systems Section -->
+    <section id="dbms">
+        <h2>Database Management Systems (DBMS)</h2>
+        <p>A DBMS is software that allows for the creation, management, and manipulation of databases. It enables data
+            storage, retrieval, and ensures data consistency and security.</p>
+        <div class="key-points">
+            <h3>Key Concepts:</h3>
+            <ul>
+                <li>Types of DBMS: Relational, NoSQL, Hierarchical</li>
+                <li>Data Models: ER Model, Relational Model</li>
+                <li>SQL Commands: SELECT, INSERT, UPDATE, DELETE</li>
+            </ul>
+        </div>
+
+        <!-- Interactive Q&A for DBMS -->
+        <div class="question">
+            <h3>What is SQL?</h3>
+            <div class="answer">
+                <p>SQL (Structured Query Language) is a language used to communicate with relational databases. It
+                    allows users to perform various operations, like retrieving, inserting, updating, and deleting data.
+                </p>
+            </div>
+        </div>
+        <div class="question">
+            <h3>What is a primary key?</h3>
+            <div class="answer">
+                <p>A primary key is a unique identifier for each record in a database table. It ensures that no
+                    duplicate records exist and that each entry is identifiable.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    
+
+   
+    <script>
+        const questions = document.querySelectorAll(".question h3");
+        questions.forEach((question) => {
+            question.addEventListener("click", () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === "block" ? "none" : "block";
+                question.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+
+</html>

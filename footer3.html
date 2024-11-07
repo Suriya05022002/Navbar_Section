@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Programming - Demo Page</title>
+    <style>
+        /* Enhanced Header Section */
+        header {
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Gradient Text and Shadow */
+        header h1 {
+            font-size: 3.5em;
+            font-weight: 800;
+            margin-bottom: 10px;
+            
+            color: black;
+            /* color: transparent; */
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+            animation: textFadeIn 2s ease-out;
+        }
+
+        header p {
+            font-size: 1.4em;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+            animation: textFadeIn 2.5s ease-out;
+        }
+
+        /* Floating Shapes Animation */
+        header::before,
+        header::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        header::before {
+            width: 150px;
+            height: 150px;
+            top: -50px;
+            left: -50px;
+            animation-delay: 1s;
+        }
+
+        header::after {
+            width: 200px;
+            height: 200px;
+            bottom: -60px;
+            right: -60px;
+            animation-delay: 3s;
+        }
+
+        /* Keyframes for Floating and Text Fade-in */
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(15deg);
+            }
+        }
+
+        @keyframes textFadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Header Background Animation */
+        header {
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            animation: backgroundAnimation 10s ease infinite;
+        }
+
+        @keyframes backgroundAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+
+        /* Navigation Menu */
+        nav {
+            background: #333;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: 500;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        nav ul li a:hover {
+            background: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            transform: translateY(-2px);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            animation: slideIn 0.8s ease-out;
+        }
+
+        section h2 {
+            color: #2E7D32;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-left: 5px solid #4CAF50;
+            padding-left: 10px;
+        }
+
+        section p,
+        section ul {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        /* Code Block Styling */
+        pre {
+            background: #272727;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 1em;
+            overflow-x: auto;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s;
+        }
+
+        pre:hover {
+            background: #333;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+        }
+
+        /* Footer Section */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li a {
+                padding: 10px;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Python Programming</h1>
+        <p>An introduction to Python programming language for beginners and professionals.</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            
+            <li><a href="#Python Programming examples">Python Programming Example Codes</a></li>
+        </ul>
+    </nav>
+
+    
+
+    <section id="Python Programming examples">
+        <h2>Python Programming Example Codes</h2>
+        <p>Here’s a simple Python program that calculates the factorial of a number:</p>
+        <pre><code>
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+print(factorial(5))  # Output: 120
+        </code></pre>
+        <p>Python Program to Add Two Numbers</p>
+        <pre>
+            <code>
+                # This program adds two numbers
+
+num1 = 1.5
+num2 = 6.3
+
+# Add two numbers
+sum = num1 + num2
+
+# Display the sum
+print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
+
+            </code>
+        </pre>
+        <p>Python Program to SWap two variables
+
+        </p>
+        <pre>
+            <code>
+                
+
+x = 5
+y = 10
+
+# To take inputs from the user
+#x = input('Enter value of x: ')
+#y = input('Enter value of y: ')
+
+# create a temporary variable and swap the values
+temp = x
+x = y
+y = temp
+
+print('The value of x after swapping: {}'.format(x))
+print('The value of y after swapping: {}'.format(y))
+
+            </code>
+        </pre>
+    </section>
+
+
+</body>
+
+</html>
